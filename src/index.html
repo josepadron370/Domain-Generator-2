@@ -26,11 +26,17 @@
             let adjective = ["pretty","ugly","fast", "slow"]
             let noun = ["dog","cat","auto","house"]
             let domains = [".com",".org",".gov",".edu"]
+            let fullname = `${possessive} ${adjective} ${noun} ${domains}`
 
-            for(i=0;i<possessive.length; i++){
-                console.log(possessive[i])
+            for(i=0; i<possessive.length; i++){
+                for(j=0; i<adjective.length; j++) {
+                    for(k=0; k<noun.length; k++) {
+                        for(l=0; l<domains.length; l++)
             }
-
+            }  
+                document.querySelector("#domainName").innerHTML="fullname"
+            
+            }
 
         </script>
     </body>
