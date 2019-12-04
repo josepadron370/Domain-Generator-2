@@ -7,16 +7,31 @@
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
         <link rel="shortcut icon" href="./4geeks.ico"></head>
     <body>
-        <div class="container-fluid text-center">
-            <h1 class="mt-5">Hello Rigo!</h1>
-            <img src="./rigo-baby.jpg"></img>
-            <p class="alert alert-warning mt-4">If this text is <b>not</b> centered and <b>yellow</b>, you probably have an error</p>
-            <div class="fixed-bottom p-4">
-                Made with ❤️ by <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-            </div>
+        <div><h1>Random Domain Generator</h1></div>
+        <div id="domainName">
+
+        </div>
+
+        <div>
+        
+        <button onclick="my()">Generate!!!</button>
+        
         </div>
 
 
         <!-- do not remove this bundle.js tag -->
-        <script type="text/javascript" src="./bundle.js"></script></body>
+        <script type="text/javascript" src="./bundle.js"></script>
+        <script>
+            let possessive = ["my","your","his","her"]
+            let adjective = ["pretty","ugly","fast", "slow"]
+            let noun = ["dog","cat","auto","house"]
+            let domains = [".com",".org",".gov",".edu"]
+
+            for(i=0;i<possessive.length; i++){
+                console.log(possessive[i])
+            }
+
+
+        </script>
+    </body>
 </html>
