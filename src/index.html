@@ -26,20 +26,21 @@
             let adjective = ["pretty","ugly","fast", "slow"]
             let noun = ["dog","cat","auto","house"]
             let domains = [".com",".org",".gov",".edu"]
-            
-
+           
+            function my() {
             for(i=0; i<possessive.length; i++){
-                for(j=0; i<adjective.length; j++) {
+                for(j=0; j<adjective.length; j++) {
                     for(k=0; k<noun.length; k++) {
                         for(l=0; l<domains.length; l++){
-                            console.log(possessive[i] + adjective[j] + noun[k] + domains[l]);
-                        }
+                            <!-- console.log(possessive[i] + adjective[j] + noun[k] + domains[l]); -->
+                            document.querySelector("#domainName").innerHTML += possessive[i] + adjective[j] + noun[k] + domains[l];
+                            }
                          }
                     }  
             
             
             }
-
+            }
         </script>
     </body>
 </html>
