@@ -8,8 +8,8 @@
         <link rel="shortcut icon" href="./4geeks.ico"></head>
     <body>
         <div><h1>Random Domain Generator</h1></div>
-        <div id="domainName">
-
+        <div>
+            <ol id="domainName"></ol>
         </div>
 
         <div>
@@ -32,8 +32,9 @@
                 for(j=0; j<adjective.length; j++) {
                     for(k=0; k<noun.length; k++) {
                         for(l=0; l<domains.length; l++){
-                            <!-- console.log(possessive[i] + adjective[j] + noun[k] + domains[l]); -->
-                            document.querySelector("#domainName").innerHTML += possessive[i] + adjective[j] + noun[k] + domains[l];
+                            <!-- console.log(possessivnnne[i] + adjective[j] + noun[k] + domains[l]); -->
+                            document.querySelector("#domainName").innerHTML += "<li>" + possessive[i] + adjective[j] + noun[k] + domains[l] + "</li>";
+                            <!-- document.querySelector("#domainName").innerHTML += `<li>${possessive[i]}${adjective[j]}${noun[k]}${domains[l]}</li>`; -->
                             }
                          }
                     }  
