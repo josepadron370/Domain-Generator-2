@@ -9,8 +9,8 @@
     <body>
         <div><h1>Random Domain Generator</h1></div>
         <div>
-            <ol id="domainName">
-            </ol>
+            <div id="domainName" class="card-group">
+            </div>
         </div>
 
         <div>
@@ -33,9 +33,7 @@
                 for(j=0; j<adjective.length; j++) {
                     for(k=0; k<noun.length; k++) {
                         for(l=0; l<domains.length; l++){
-                            <!-- console.log(possessivnnne[i] + adjective[j] + noun[k] + domains[l]); -->
-                            document.querySelector("#domainName").innerHTML += "<li>" + possessive[i] + adjective[j] + noun[k] + domains[l] + "</li>";
-                            <!-- document.querySelector("#domainName").innerHTML += `<li>${possessive[i]}${adjective[j]}${noun[k]}${domains[l]}</li>`; -->
+                            document.querySelector("#domainName").innerHTML += '<div class="card">' + possessive[i] + adjective[j] + noun[k] + domains[l] + "</div>";
                             }
                          }
                     }  
